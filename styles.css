@@ -51,12 +51,8 @@ body {
 }
 .hero-section {
   background: linear-gradient(180deg, #010b4b 41.34%, #0027a4 98.15%);
-  /* height: 100vh; */
 }
-.nav-links-container {
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0px 4px 15px 0px rgba(212, 212, 212, 0.15); */
-}
+
 .nav-links-sub-container {
   display: flex;
   align-items: center;
@@ -79,8 +75,7 @@ a {
 .nav-links-sub-container ul li a {
   padding: 12px;
 }
-.dropdown a,
-a {
+.dropdown a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -512,7 +507,12 @@ span.timely {
   cursor: pointer;
 }
 .nirman-works {
+  margin-bottom: 50px;
+}
+.nirman-works,
+.free-trail {
   background: linear-gradient(180deg, #010b4b 41.34%, #0027a4 98.15%);
+  /* padding-bottom: 20px; */
 }
 .work-container h1.head {
   padding-top: 137.72px;
@@ -530,6 +530,7 @@ span.timely {
 .work-container {
   max-width: 1280px;
   margin: auto;
+  padding-bottom: 50px;
 }
 .work-container .work-card-container {
   display: grid;
@@ -540,11 +541,113 @@ span.timely {
 .work-container .work-card-container .card {
   padding: 20px;
   border: 1px solid black;
-  background: #d9d9d9;
+  background: #fff;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 img.small-screen-logo {
   display: none;
+}
+
+.free-trail-container {
+  color: #fff;
+  max-width: 850px;
+  margin: auto;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.free-trail-container h1 {
+  font-size: 58px;
+  margin-bottom: 8px;
+  line-height: 69px;
+}
+.free-trail-container p {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.nav-btns .btn-1.demo {
+  opacity: 10;
+}
+
+.download-container,
+.footer-container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 4rem 0;
+}
+.download-container h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.download-links {
+  display: flex;
+  gap: 12px;
+}
+.social-medias-icons svg {
+  height: 28px;
+  width: 28px;
+}
+.footer-logo-side img {
+  width: 200px;
+}
+.footer-upper-level-container {
+  background: rgba(221, 221, 221, 0.2);
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo-side {
+  width: 50%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+.footer-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 100px;
+}
+
+.footer-links ul li,
+a {
+  color: #010b4b;
+  text-decoration: none;
+  list-style-type: none;
+}
+.footer-links h3 {
+  font-weight: bold;
+  color: #010b4b;
+}
+
+.lower-level-footer {
+  background: linear-gradient(180deg, #010b4b 41.34%, #0027a4 98.15%);
+}
+.lower-level-footer .lower-footer-container {
+  max-width: 1320px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.5);
+}
+.lower-footer-container {
+  padding: 1rem 0;
+}
+.lower-footer-container img {
+  width: 4 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -794,6 +897,61 @@ img.small-screen-logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .footer-links {
+    gap: 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .lower-footer-container {
+    padding: 1rem 1.5rem;
+  }
+  .lower-footer-container p {
+    font-size: 10px;
+    width: 70%;
+  }
+  .lower-footer-container img {
+    width: 30px;
+  }
+  .free-trail-container h1 {
+    font-size: 26px;
+    line-height: normal;
+    text-align: center;
+  }
+  .free-trail-container,
+  .download-container,
+  .footer-container {
+    margin: 0 24px;
+  }
+  .free-trail-container p {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 200px;
+  }
+  .footer-container {
+    gap: 50px;
+  }
+  .footer-container .footer-logo-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 500px;
+  }
+  .social-medias-icons {
+    display: flex;
+    gap: 10px;
+  }
+  .footer-links ul li a,
+  .footer-links p {
+    font-size: 12px;
+  }
+  .footer-links h3 {
+    font-size: 16px;
+  }
+  .footer-links {
+    justify-content: space-between;
   }
 }
 
